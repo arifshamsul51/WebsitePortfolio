@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Client website template">
+    <title>Client Website Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="top">
+       <div class="container hero-layout">
+    <img src="profile.jpg" alt="Profile picture of Shamrin" class="profile-pic">
+    
+    <div class="hero-text">
+        <h1 id="greeting">Welcome</h1>
+        <h2>I am Shamrin</h2>
+        <p>I am passionate about making things easier and creative. Scroll down to see my work.</p>
+        <a href="#services" class="btn">View Project</a>
+    </div>
+</div>
+            <div class="logo">Shamrin</div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span>&#9776;</span>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle">🌙 Mode</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 id="greeting">Welcome</h1>
+                <p>We provide excellent solutions for your business needs.</p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>My Projects so far...</h2>
+		<div class="service-grid">
+                    
+                    <article class="card">
+                        <img src="project1.jpg" alt="Screenshot of Math Challenge Game" class="project-thumb">
+                        <h3>3 Lives Math Challenge</h3>
+                        <p>
+                            An interactive educational game built with JavaScript. Players must solve arithmetic problems quickly to maintain their "lives" and achieve a high score. Features real-time score tracking and input validation.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img src="project2.jpg" alt="Screenshot of Weather App Interface" class="project-thumb">
+                        <h3>Real-Time Weather App</h3>
+                        <p>
+                            A dynamic weather dashboard that fetches real-time data for cities like Kuching. It displays current temperature, humidity, and wind speed in a clean UI, demonstrating API integration skills.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img src="project3.jpg" alt="Screenshot of Interior Design Website" class="project-thumb">
+                        <h3>Innovation Interior Design</h3>
+                        <p>
+                            A responsive landing page for an interior design firm. This project focuses on UI/UX design, featuring a modern hero section, semantic navigation, and a "Find Your Style" call-to-action.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+               
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <small class="error-msg" id="emailError"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                        <small class="error-msg" id="msgError"></small>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="formFeedback"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Shamrin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
